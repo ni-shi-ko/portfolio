@@ -1,12 +1,13 @@
+
 #header {
-  height: 10vh;
+    height: 10vh;
 }
-.header-nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-  line-height: 10vh;
+.header-nav a{
+   text-decoration: none;
+   color: black;
+   font-size: 40px;
+   font-family:'Times New Roman', Times, serif;;
+   line-height: 10vh;
 }
 #main-vis {
   background-image: url(../img/sea.png);
@@ -18,41 +19,50 @@
   position: relative;
 }
 #main-vis p {
-  font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  color: white;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: white;
 }
 #profile {
-  background-color: #c0c0c0;
-  color: white;
-  padding-bottom: 8%;
-  margin-bottom: 10%;
-  width: 100%;
+    background-color: #c0c0c0;
+    color: white;
+    padding-bottom: 8%;
+    margin-bottom: 10%;
+    background-image: url(../img/backimg-gray.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+   padding-bottom: 50%;
+   position: relative;
+   height: 100vh;
 }
 #profile h5 {
-  font-size: 20px;
+    font-size: 20px;
 }
 .profile-text {
-  margin-bottom: 5%;
-  font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 20px;
 }
-.name {
-  position: relative;
+.profile-title {
+    margin-right: 15%;
 }
-.name-img {
-  margin-top: 5%;
-  padding: 13%;
-  background-color: khaki;
-  margin-right: 40%;
-  margin-left: 10%;
-}
+/* .name {
+   position: relative;
+} */
+/* .name-img {
+    margin-top: 5%;
+    padding: 13%;
+    background-color:khaki;
+    margin-right: 40%;
+    margin-left: 10%;
+} */
 .name-inner {
   color: #000;
   position: absolute;
-  top: 28%;
+  top: 20%;
   left: 45%;
   background: #fff;
   width: 40%;
@@ -60,31 +70,31 @@
   box-sizing: border-box;
 }
 
-.hobby {
-  position: relative;
+/* .hobby {
+    position: relative;
+} */
+/* .hobby-img {
+    padding:15% 20%;
+    margin-left: 50%;
+    margin-top: 3%;
+    background-color: yellow;
 }
-.hobby-img {
-  padding: 15% 20%;
-  margin-left: 50%;
-  margin-top: 3%;
-  background-color: yellow;
-}
-.hobby-div {
-  padding: 10% 18%;
-  background-color: goldenrod;
-  margin: 0 30%;
-  position: absolute;
-  top: 8%;
-  right: 30%;
+.hobby-div{
+    padding: 10% 18%;
+    background-color: goldenrod;
+    margin: 0 30%;
+    position: absolute;
+    top: 8%;
+    right: 30%;
 }
 .hobby-div_second {
-  padding: 10% 18%;
-  background-color: palegoldenrod;
-  margin: 0 30%;
-  position: absolute;
-  top: 15%;
-  right: 25%;
-}
+    padding: 10% 18%;
+    background-color:palegoldenrod;
+    margin: 0 30%;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+} */
 .hobby-inner {
   color: #000;
   position: absolute;
@@ -96,164 +106,148 @@
   box-sizing: border-box;
 }
 .section-title {
-  text-align: center;
-  font-size: 80px;
-  font-weight: 500;
-  margin: 20px 0;
-  padding-top: 20px;
-  font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    margin: 20px 0;
+    padding-top: 20px;
+    font-family:'Times New Roman', Times, serif;
 }
 #skill {
-  background-color: #c0c0c0;
-  margin-bottom: 10%;
-  width: 100%;
-  position: relative;
+    background-color: #c0c0c0;
+    margin-bottom: 10%;
+    background-image: url(../img/bgc-sec.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
-.skill-text {
-  color: white;
-  padding: 0 25%;
-  text-align: center;
-  margin-bottom: 5%;
-  font-size: 20px;
+.skill-text{
+    color: white;
+    padding: 0 25%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 20px;
 }
 .skill-title {
-  color: #fff;
+   color: #fff;
 }
 .skill-wrap {
-  margin: 0 auto;
-  padding: 0 20%;
-  position: relative;
+   margin: 0 auto;
+   padding: 0 20%;
+   position: relative;
 }
-.skill-div {
-  background-color: beige;
-  padding: 30% 43%;
-  position: absolute;
-  top: 10%;
-  left: 0;
+/* .skill-div {
+    background-color:beige;
+    padding: 30% 43%;
+    position:absolute;
+    top: 10%;
+    left: 0;
 }
 .skill-div_second {
-  position: absolute;
-  right: 0;
-  bottom: 3%;
-  background-color: ivory;
-  padding: 22% 40%;
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    background-color: burlywood;
+    padding:22% 20%;
+    z-index: 50;
 }
-/* .skill-div_third {
+.skill-div_third {
     position: absolute;
     left: 5%;
     top: 5%;
-    background-color:ivory ;
+    background-color: burlywood;
     padding: 15% 23%;
-} */
-/* .skill-div_force {
-    position: absolute;
-    padding: 18% 25%;
-    background-color:wheat ;
-    bottom: 6%;
-    left: 3%;
+    z-index: 50;
 } */
 .skill-list {
-  width: 35%;
-  border: 1px solid #000;
-  margin-bottom: 10%;
-  background-color: #fff;
-  z-index: 100;
+   width: 35%;
+   border: 1px solid #000;
+   margin-bottom: 10%;
+   background-color: #fff;
+   z-index: 100;
 }
 .skill-img {
-  width: 50%;
-  display: flex;
+    width: 50%;
+    display: flex;
 }
 .skill-img img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 .inner {
-  padding: 20%;
+    padding: 20%;
 }
 .inner p {
-  text-align: center;
-  font-size: 30px;
-  line-height: 1.5;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
 }
 .inner h3 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
 }
 
 .first {
-  margin-left: 10%;
+    margin-left: 10%;
 }
 .force {
-  margin-right: 10%;
-}
+    margin-right: 10%;
+   
+}  
 #works {
-  background-color: #c0c0c0;
-  color: #fff;
-  margin-bottom: 10%;
-  padding: 5%;
-  position: relative;
-  z-index: 50;
+    background-image: url(../img/bgc-third.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-color: #c0c0c0;
+    color: #fff;
+    margin-bottom: 10%;
+    padding: 5%;
 }
 .work-text {
-  margin-bottom: 5%;
-  font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 20px;
 }
 .work-cat {
-  width: 28%;
-  padding: 20px 35px 30px;
-  box-sizing: border-box;
-  margin-bottom: 50px;
-  color: #000;
-}
-.work-div {
-  position: absolute;
-  padding: 13%;
-  background-color: orange;
-  bottom: 5%;
-  left: 25%;
-  z-index: -1;
-}
-.work-div_second {
-  position: absolute;
-  padding: 13%;
-  background-color: orangered;
-  top: 10%;
-  right: 30%;
-  z-index: -1;
+    width: 28%;
+    padding: 20px 35px 30px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    color: #000;
 }
 .card-title {
-  text-align: center;
-  font-size: 20px;
-  padding: 3% 0;
-  font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    padding: 3% 0; 
+    font-weight: bold;
 }
 #contact {
-  background-color: #c0c0c0;
-  padding-bottom: 2%;
-  color: #fff;
+   background-color: #c0c0c0;
+   padding-bottom: 2%;
+   color: #fff;
 }
 .contact-text {
-  margin-bottom: 5%;
-  font-size: 20px;
+    margin-bottom: 5%;
+    font-size: 20px;
 }
 form {
   text-align: center;
 }
 .row {
-  position: relative;
+    position: relative;
 }
 .input {
-  border: none;
-  border-bottom: 1px solid #000;
-  background-color: transparent;
-  width: 20%;
-  margin: 0 auto;
-  outline: 0;
-  margin-bottom: 3%;
+ border: none;
+ border-bottom: 1px solid #000;
+ background-color: transparent;
+ width: 20%;
+ margin: 0 auto;
+ outline: 0;
+ margin-bottom: 3%;
 }
 /* .input ~ .focus_line {
     position: absolute;
@@ -270,42 +264,42 @@ form {
 	transition: 0.4s;
 } */
 .msg {
-  margin: 0 auto;
-  border: none;
-  border-bottom: 1px solid #000;
-  background-color: transparent;
-  width: 50%;
-  outline: 0;
+ margin: 0 auto;
+ border: none;
+ border-bottom: 1px solid #000;
+ background-color: transparent;
+ width: 50%;
+ outline: 0;
 }
 
 .btn {
-  margin: 3% 0;
-  padding: 2% 5%;
+    margin:3% 0;
+    padding:2% 5%;
 }
 #footer {
-  color: #fff;
-  background-color: #000;
+    color: #fff;
+    background-color: #000;
 }
 .footer-nav li {
-  list-style: none;
-  margin: 1% 0;
+    list-style: none;
+    margin: 1% 0;
 }
 .footer-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    color: #fff;
+   font-size: 20px;
+   font-family:'Times New Roman', Times, serif;
 }
 .footer-text {
-  padding: 10px 0;
-  background-color: #c0c0c0;
+    padding: 10px 0; 
+    background-color: #c0c0c0;
 }
 
 @media screen and (max-width: 768px) {
-  .header-nav {
+.header-nav {
     display: none;
   }
-  #hamburger {
+#hamburger {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -339,91 +333,47 @@ form {
     left: 2px;
   }
   #profile {
-    padding: 5% 0;
+      padding: 5% 0;
   }
   .name-inner {
-    width: 80%;
-    top: 0;
-    left: 10%;
-    text-align: center;
-  }
-  .name-img {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 40%;
+    width: 90%;
+    position: inherit;
   }
   .hobby-inner {
-    width: 80%;
-    text-align: center;
-    padding: 10%;
-    bottom: 30%;
-    left: 10%;
-  }
-  .hobby-img {
-    margin-top: 7%;
-  }
-  .hobby-div {
-    top: 40%;
-    right: 30%;
-  }
-  .hobby-div_second {
-    top: 25%;
-    right: 28%;
+      width: 80%;
+      text-align: center;
+      padding: 10%;
+      bottom: 20%;
   }
   #skill {
-    padding: 5%;
-    position: relative;
+      padding: 5%;
   }
   .skill-text {
-    padding: 5%;
+      padding: 5%;
   }
   .skill-wrap {
-    padding: 5% 0;
-    position: relative;
+      padding:5% 0;
   }
   .skill-list {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 10%;
-  }
-  .skill-div {
-    padding: 80% 50%;
-  }
-  .skill-div_second {
-    bottom: 30%;
-    padding: 75% 50%;
-  }
-  .skill-div_third {
-    top: 3%;
-    padding: 70% 50%;
-  }
-  .skill-div_force {
-    padding: 80% 50%;
-    bottom: 10%;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10%;
   }
   .inner {
-    padding: 10%;
+      padding: 10%;
   }
   .work-wrap {
-    display: block !important;
+      display: block!important;
   }
   .work-cat {
     width: 100%;
   }
-  .work-div {
-    left: 0;
-    bottom: 0;
-    padding: 80% 40%;
-  }
-  .work-div_second {
-    padding: 90% 40%;
-    right: 0;
-    top: 0;
-  }
   #contact {
-    padding: 5%;
+      padding: 5%;
   }
   .input {
-    width: 50%;
+      width: 50%;
   }
 }
+
+
