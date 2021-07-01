@@ -26,7 +26,7 @@
   color: white;
 }
 #profile {
-  background-color: #c0c0c0;
+  background-color: rgb(220, 220, 220);
   color: white;
   padding-bottom: 8%;
   margin-bottom: 10%;
@@ -36,14 +36,13 @@
   font-size: 20px;
 }
 .profile-text {
-  margin-bottom: 5%;
   font-size: 20px;
+  margin: 1%;
 }
 .name {
   position: relative;
 }
 .name-img {
-  margin-top: 5%;
   padding: 13%;
   background-color: khaki;
   margin-right: 40%;
@@ -52,7 +51,7 @@
 .name-inner {
   color: #000;
   position: absolute;
-  top: 28%;
+  top: 20%;
   left: 45%;
   background: #fff;
   width: 40%;
@@ -104,7 +103,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 #skill {
-  background-color: #c0c0c0;
+  background-color: rgb(220, 220, 220);
   margin-bottom: 10%;
   width: 100%;
   position: relative;
@@ -123,6 +122,9 @@
   margin: 0 auto;
   padding: 0 20%;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .skill-div {
   background-color: beige;
@@ -130,21 +132,24 @@
   position: absolute;
   top: 10%;
   left: 0;
+  z-index: 1;
 }
 .skill-div_second {
   position: absolute;
   right: 0;
   bottom: 3%;
   background-color: ivory;
-  padding: 22% 40%;
+  padding: 22% 43%;
+  z-index: 10;
 }
-/* .skill-div_third {
+.skill-div_third {
     position: absolute;
-    left: 5%;
-    top: 5%;
+    left: 10%;
+    top: 2%;
     background-color:ivory ;
-    padding: 15% 23%;
-} */
+    padding: 20% 40%;
+    
+}
 /* .skill-div_force {
     position: absolute;
     padding: 18% 25%;
@@ -159,7 +164,7 @@
   background-color: #fff;
   z-index: 100;
 }
-.skill-img {
+.skill-img { 
   width: 50%;
   display: flex;
 }
@@ -191,7 +196,7 @@
   margin-right: 10%;
 }
 #works {
-  background-color: #c0c0c0;
+  background-color: rgb(220, 220, 220);
   color: #fff;
   margin-bottom: 10%;
   padding: 5%;
@@ -232,7 +237,7 @@
   font-weight: bold;
 }
 #contact {
-  background-color: #c0c0c0;
+  background-color: rgb(220, 220, 220);
   padding-bottom: 2%;
   color: #fff;
 }
@@ -298,7 +303,7 @@ form {
 }
 .footer-text {
   padding: 10px 0;
-  background-color: #c0c0c0;
+  background-color: rgb(220, 220, 220);
 }
 
 @media screen and (max-width: 768px) {
@@ -394,12 +399,14 @@ form {
     padding: 75% 50%;
   }
   .skill-div_third {
-    top: 3%;
-    padding: 70% 50%;
+      display: none;
+    /* top: 3%;
+    padding: 70% 50%; */
   }
   .skill-div_force {
-    padding: 80% 50%;
-    bottom: 10%;
+      display: none;
+    /* padding: 80% 50%;
+    bottom: 10%; */
   }
   .inner {
     padding: 10%;
