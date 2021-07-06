@@ -4,18 +4,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<style type="text/css">
+ /* [data-aos=fade-right] {
+    transform: translate3d(200px,0,0);
+} */
+   [data-aos=zoom-in] {
+    transform: translate3d(0,100px,0) scale(.6);
+}
+    /* [data-aos=fade-left] {
+        transform: translate3d(-200px,0,0);
+    } */
+</style>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header id="hamburger">
+    <header id="header">
         <div class="header-wrap">
             <nav class="header-nav">
-                <ul class="d-flex justify-content-around">
+                <ul>
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Skill</a></li>
                     <li><a href="#">Works</a></li>
@@ -23,10 +36,19 @@
                 </ul>
             </nav>
         </div>
-        <div id="hamberger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="nav">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="hamburger">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
         </div>
     </header>
 
@@ -35,11 +57,29 @@
             <p>My Portfolio</p>
         </div>
         <div id="profile">
-            <h1 class="section-title profile-title">Profile</h1>
-            <p class="profile-text  text-center">簡単ではありますが自己紹介をさせていただきます。</p>
+            <h1 class="profile-title"
+            data-aos="fade-left"
+            >Profile</h1>
             <div class="name">
-            　<div class="name-img"></div>
-             <div class="name-inner">
+            　<div class="name-div"
+                   data-aos="zoom-in" 
+                   data-aos-offset="80"
+                   data-aos-duration="700"
+                   data-aos-delay="300"
+                   data-aos-easing="ease-in"
+                   data-aos-mirror="true"
+                   data-aos-anchor-placement="top">
+            </div>
+            <div class="profile-img">
+                <img src="./img/ao.jpg" alt="" class="face" id="slide-profile" 
+                data-aos="fade-down-right"
+                data-aos-easing="ease"
+                data-aos-mirror="true"
+               >
+            </div>
+             <div class="name-inner" 
+             data-aos="fade-right"
+             >
                  <h5>About me</h5>
                  <p>name：西出幸士朗</p>
                  <p>school：福井県立大学</p>
@@ -47,10 +87,58 @@
              </div>
            </div>
             <div class="hobby">
-            <div class="hobby-img"></div>
-            <div class="hobby-div"></div>
-            <div class="hobby-div_second"></div>
-           <div class="hobby-inner">
+            <div class="fashion ">
+                <img src="./img/fashion.jpg" alt="" id = "hobby-slide" class="slide-img"
+                data-aos="flip-down"
+                data-aos-offset="200"
+                data-aos-duration="700"
+                data-aos-delay="450"
+                data-aos-anchor-placement="top-bottom">
+            </div>
+            <div class="hobby-img "
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="900"
+                data-aos-delay="350"
+                data-aos-easing="ease-out"
+                data-aos-anchor-placement="top-bottom"
+            >
+            </div>
+            <div class="hobby-div"
+                data-aos="fade-down-right"
+                data-aos-offset="200"
+                data-aos-duration="900"
+                data-aos-delay="300"
+                data-aos-anchor-placement="top-bottom">
+            </div>
+            <div class="hobby-div_second"
+                 data-aos="fade-down-right"
+                 data-aos-offset="250"
+                 data-aos-duration="700"
+                 data-aos-delay="300"
+                 data-aos-anchor-placement="top-bottom">
+            </div>
+            <div class="hobby-div-third"
+                data-aos="fade-down-right"
+                data-aos-offset="300"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-bottom">
+            </div>
+            <div class="hobby-div-force"
+                data-aos="fade-down-right"
+                data-aos-offset="350"
+                data-aos-duration="850"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-bottom">
+
+            </div>
+           <div class="hobby-inner"
+                data-aos="fade-down-right"
+                data-aos-offset="350"
+                data-aos-duration="900"
+                data-aos-delay="450"
+                data-aos-anchor-placement="top-bottom">
                <h5>My Hobby</h5>
                <p>洋服・旅行・自転車</p> 
            </div>
@@ -58,9 +146,14 @@
         </div>
         <div id="skill">
           <h1 class="section-title skill-title">Skill</h1>
-            <p class="skill-text">スクールで得たスキルのレベルをまとめてみました。まだ２ヶ月ほどしかたっていませんのでまだまだ勉強中です。これからも積極的に今できることのレベルアップや新しい知識を取り込んでますますできることを増やし、成長していきます。</p>
+            <p class="skill-text">スクールで得たスキルのレベルをまとめてみました。<br>まだ２ヶ月ほどしかたっていませんのでまだまだ勉強中です。これからも積極的に今できることのレベルアップや新しい知識を取り込み、できることを増やし、成長していきます。</p>
             <div class="skill-wrap "> 
-                <div class="skill-list first">
+                <div class="skill-list first" 
+                data-aos="fade-left"
+                data-aos-easing="ease-out-sine"
+                data-aos-duration="700"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom">
                  <div class="skill-img">
                     <img src="./img/html.png" class="rounded float-start"  alt="">
                     <img src="./img/css.png" class="rounded float-end" alt="">
@@ -73,7 +166,11 @@
                      <p>★★★☆☆</p>
                  </div>
                 </div>
-                <div class="skill-list second"> 
+                <div class="skill-list second"
+                data-aos="fade-left"
+                data-aos-easing="ease-out-sine"
+                data-aos-duration="850"
+                data-aos-anchor-placement="center-bottom"> 
                      <div class="skill-img">
                     <img src="./img/js.png" class="rounded float-start" alt="">
                     <img src="./img/vuejs.png" class="rounded float-end" alt="">
@@ -86,7 +183,11 @@
                      <p>★★★☆☆</p>
                  </div>
                 </div>
-                <div class="skill-list third"> 
+                <div class="skill-list third"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-sine"
+                data-aos-duration="850"
+                data-aos-anchor-placement="center-bottom"> 
                      <div class="skill-img">
                     <img src="./img/php.png" class="rounded float-start" alt="" >
                     <img src="./img/laravel.png" class="rounded float-end" alt="" >
@@ -99,7 +200,13 @@
                      <p>★★★☆☆</p>
                  </div>
                 </div>
-                <div class="skill-list force"> 
+                <div class="skill-list force"
+                data-aos="fade-right"
+                data-aos-easing="ease-out-sine"
+                data-aos-duration="700"
+                data-aos-delay="300"
+                data-aos-anchor-placement="center-bottom"
+                > 
                      <div class="skill-img">
                     <img src="./img/mysql.png"  class="rounded float-start" alt="">
                     <img src="./img/github.png" class="rounded float-end" alt="">
@@ -112,43 +219,77 @@
                      <p>★★★☆☆</p>
                  </div>
                 </div>
-                <div class="skill-div"></div>
-                <div class="skill-div_second "></div>
-                <div class="skill-div_third "></div>
+                <div class="skill-div"
+                ></div>
+                <div class="skill-div_second"
+                data-aos="fade-left"
+                data-aos-easing="easeout-sine"
+                data-aos-duration="500"
+                data-aos-delay="600"
+                data-aos-anchor-placement="center"></div>
+                <div class="skill-div_third"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-delay="100"
+                data-aos-anchor-placement="center"></div>
                 <!-- <div class="skill-div_force"></div> -->
                 </div>
         </div>
         <div id="works">
-            <h1 class="section-title">Works</h1>
-            <p class="work-text text-center">まだまだ未熟者ですが、一生懸命制作した成果物たちをご紹介します。</p>
-            <div class="work-wrap d-flex justify-content-around">
-                <div class="work-cat card">
-                  <!-- <div class="col-md-6"> -->
+            <h1 class="section-title work-title"
+             data-aos="fade-left"
+             data-aos-anchor-placement="top">
+             Works
+            </h1>
+            <p class="work-text text-center"
+               data-aos="fade-left"
+                 data-aos-anchor-placement="top">
+                まだまだ未熟者ですが、一生懸命制作した成果物たちをご紹介します。</p>
+            <div class="work-wrap">
+                <div class="work-cat"
+                data-aos="zoom-in-up"
+                data-aos-offset="80"
+                data-aos-duration="800"
+                data-aos-delay="550"
+                data-aos-anchor-placement="center-bottom">
                     <img src="./img/html.png " alt=" " />
                     <h4 class="card-title">Portfolio</h4>
                     <p>紹介文</p>
                     <a href="# " class="btn btn-primary">Go somewhere</a>
-                  <!-- </div> -->
                 </div>
-                <div class="work-cat card">
+                <div class="work-cat" 
+                data-aos="zoom-in-up"
+                data-aos-offset="90"
+                data-aos-duration="850"
+                data-aos-delay="600"
+                data-aos-anchor-placement="center-bottom">
                     <img src="./img/html.png " alt=" " />
                     <h4 class="card-title">お申し込みフォーム</h4>
                     <p>紹介文</p>
                     <a href="# " class="btn btn-primary">Go somewhere</a>
                 </div>
-                <div class="work-cat card">
+                <div class="work-cat"
+                data-aos="zoom-in-up"
+                data-aos-offset="100"
+                data-aos-duration="900"
+                data-aos-delay="650"
+                data-aos-anchor-placement="center-bottom">
                     <img src="./img/html.png" alt=" " />
                     <h4 class="card-title">連絡先リストアプリ</h4>
                     <p>紹介文</p>
                     <a href="# " class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-                <div class="work-div"></div>
-                <div class="work-div_second"></div>
+                <div class="work-div"
+                data-aos="fade-up-right"
+                 data-aos-anchor-placement="top"></div>
+                <div class="work-div_second"
+                data-aos="fade-down-left"
+                data-aos-anchor-placement="top"></div>
         </div>
         <div id="contact">
             <h1 class="section-title">Contact</h1>
-            <p class="contact-text text-center">最後までご覧いただきありがとうございました。私になにかご連絡したいこと等がありましたら下記フォームをお使いください。</p>
+            <p class="contact-text">最後までご覧いただきありがとうございました。<br>私になにかご連絡したいこと等がありましたら下記フォームをお使いください。</p>
             <form method="post " class="form">
                <div class="contact-wrap">
                 <div class="row">
@@ -175,22 +316,19 @@
 
     <footer id="footer">
         <div class="footer-nav">
-            <ul class="d-flex justify-content-around">
+            <ul>
                 <li><a href="# ">profile</a></li>
                 <li><a href="# ">skill</a></li>
                 <li><a href="# ">works</a></li>
                 <li><a href="# ">contact</a></li>
             </ul>
         </div>
-        <div class="footer-text text-center">Copyright Koshiro Nishide All Rights Reserved.</div>
+        <div class="footer-text">Copyright Koshiro Nishide All Rights Reserved.</div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
-
-    <div class="container">
-</div>
-
+<code><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script></code>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
