@@ -504,15 +504,17 @@ form {
     right: 27%;
   }
   .hobby-div-third {
+    display: none;
     top: 79%;
     right: 24%;
   }
   .hobby-div-force {
+    display: none;
     top: 76%;
     right: 21%;
   }
   #skill {
-    padding: 5%;
+    /* padding: 5%; */
     position: relative;
   }
   .skill-text {
@@ -533,7 +535,6 @@ form {
   .skill-div_second {
     bottom: 30%;
     padding: 75% 50%;
-    
   }
   .skill-div_third {
    top: 75%;
