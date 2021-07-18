@@ -303,6 +303,10 @@ a {
   text-align: center;
   margin-bottom: 2%;
 }
+.work-cat a {
+  font-size: 13px;
+  margin: 3% 0;
+}
 .work-div {
   position: absolute;
   padding: 13%;
@@ -322,6 +326,9 @@ a {
 .work-btn {
   border: none;
   padding: 5%;
+}
+.portfolio-btn {
+  margin-top: 12%;
 }
 .card-title {
   text-align: center;
