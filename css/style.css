@@ -554,20 +554,35 @@ form {
     padding: 40%;
   }
   .hobby-inner {
-    width: 80%;
+    position: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
     text-align: center;
-    padding: 10%;
-    bottom: 2%;
-    left: 10%;
+    margin-bottom: 5%;
   }
   .hobby-img {
     margin-top: 7%;
   }
   .slide-img {
-    position: inherit;
-    width: 100%;
+    width: 90%;
+    top: 17%;
+    left: 0;
+    padding: 0 5%;
   }
-  .hobby-div {
+  .slide-img_second{
+    width: 90%;
+    top: 17%;
+    left: 0;
+    padding: 0 5%;
+  }
+  .slide-img_third {
+    width: 90%;
+    top: 17%;
+    left: 0;
+    padding: 0 5%;
+  }
+  /* .hobby-div {
     top: 85%;
     right: 30%;
   }
@@ -584,7 +599,7 @@ form {
     display: none;
     top: 76%;
     right: 21%;
-  }
+  } */
   #skill {
     /* padding: 5%; */
     position: relative;
