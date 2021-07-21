@@ -9,6 +9,7 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
 
 <style type="text/css">
  /* [data-aos=fade-right] {
@@ -87,6 +88,8 @@
              </div>
            </div>
             <div class="hobby">
+                <h1 class="profile-title hobby-title"
+            data-aos="fade-left">Hobby</h1>
             <div class="fashion ">
                 <img src="./img/fashion.jpg" alt="" id = "hobby-slide" class="slide-img"
                 data-aos="flip-down"
@@ -94,6 +97,8 @@
                 data-aos-duration="700"
                 data-aos-delay="450"
                 data-aos-anchor-placement="top-bottom">
+                <img src="../portfolio-pj/src/assets/img/main.jpg" alt="" class="slide-img_second">
+                <img src="./img/cycle.jpg" alt="" class="slide-img_third">
             </div>
             <div class="hobby-img "
                 data-aos="fade-right"
@@ -104,7 +109,7 @@
                 data-aos-anchor-placement="top-bottom"
             >
             </div>
-            <div class="hobby-div"
+            <!-- <div class="hobby-div"
                 data-aos="fade-down-right"
                 data-aos-offset="200"
                 data-aos-duration="900"
@@ -132,7 +137,7 @@
                 data-aos-delay="400"
                 data-aos-anchor-placement="top-bottom">
 
-            </div>
+            </div> -->
            <div class="hobby-inner"
                 data-aos="fade-down-right"
                 data-aos-offset="350"
@@ -140,18 +145,20 @@
                 data-aos-delay="450"
                 data-aos-anchor-placement="top-bottom">
                <h5>My Hobby</h5>
-               <p>洋服・旅行・自転車</p> 
+               <p>洋服：大学のときに古着にハマり、お金を使いすぎて基本金欠でした、、、。</p>
+               <p>旅行：特に大学２年のときに１人青春18きっぷを使って四国を1周したことです。</p>
+               <p>自転車：最近ハマりました。春、秋にたくさん乗りたいです。</p> 
            </div>
            </div>
         </div>
         <div id="skill">
-          <h1 class="section-title skill-title"
+          <h1 class="skill-title profile-title"
               data-aos="zoom-in">
               Skill
             </h1>
             <p class="skill-text"
                data-aos="zoom-out"
-                >スクールで得たスキルのレベルをまとめてみました。<br>まだ２ヶ月ほどしかたっていませんのでまだまだ勉強中です。これからも積極的に今できることのレベルアップや新しい知識を取り込み、できることを増やし、成長していきます。
+                >スクールで得たスキルのレベルをまとめてみました。<br>まだ２ヶ月ほどしかたっていませんのでまだまだ勉強中です。<br>これからも積極的に今できることのレベルアップ、スキルの取得を日々していきます。
             </p>
             <div class="skill-wrap "> 
                 <div class="skill-list first" 
@@ -167,7 +174,7 @@
                  <div class="inner">
                      <h3>コーディング</h3>
                      <p>HTML5</p>
-                     <p>★★★☆☆</p>
+                     <p>★★★★☆</p>
                      <p>CSS3</p>
                      <p>★★★☆☆</p>
                  </div>
@@ -201,9 +208,9 @@
                  <div class="inner">
                      <h3>バックエンド</h3>
                      <p>php</p>
-                     <p>★★★☆☆</p>
+                     <p>★☆☆☆☆</p>
                      <p>laravel</p>
-                     <p>★★★☆☆</p>
+                     <p>★☆☆☆☆</p>
                  </div>
                 </div>
                 <div class="skill-list force"
@@ -220,13 +227,13 @@
                  <div class="inner">
                      <h3>その他</h3>
                      <p>mysql</p>
-                     <p>★★★☆☆</p>
+                     <p>★★☆☆☆</p>
                      <p>git</p>
-                     <p>★★★☆☆</p>
+                     <p>★★☆☆☆</p>
                  </div>
                 </div>
-                <div class="skill-div"
-                ></div>
+                <!-- <div class="skill-div"
+                ></div> -->
                 <div class="skill-div_second"
                 data-aos="fade-left"
                 data-aos-easing="easeout-sine"
@@ -238,11 +245,10 @@
                 data-aos-duration="600"
                 data-aos-delay="500"
                 data-aos-anchor-placement="bottom"></div>
-                <!-- <div class="skill-div_force"></div> -->
                 </div>
         </div>
         <div id="works">
-            <h1 class="section-title work-title"
+            <h1 class="profile-title work-title"
              data-aos="fade-left"
              data-aos-anchor-placement="top">
              Works
@@ -255,24 +261,24 @@
                 <div class="work-cat"
                 data-aos="zoom-in-up"
                 data-aos-offset="80"
-                data-aos-duration="800"
+                data-aos-duration="500"
                 data-aos-delay="550"
                 data-aos-anchor-placement="center-bottom">
                     <img src="./img/portfolio.jpg" alt=" " />
                     <h4 class="card-title">Portfolio</h4>
-                    <p>ポートフォリオです。</p>
-                    <a href="https://github.com/ni-shi-ko/portfolio-pj.git" >git:https://github.com/ni-shi-ko/portfolio.git</a>
-                    <button class="work-btn portfolio-btn">
-                     <a href="file:///Users/nishidekoshiro/sourcstree/index.html" >Portfolio</a>
+                    <p>ポートフォリオです。シンプルで見やすいことを意識して制作しました。</p>
+                     <a href="https://github.com/ni-shi-ko/portfolio-pj.git" >git:https://github.com/ni-shi-ko/portfolio.git</a>
+                    <button class="work-btn">  
+                    <a href="file:///Users/nishidekoshiro/sourcstree/index.html" >Portfolio</a>
                     </button>
                 </div>
                 <div class="work-cat" 
                 data-aos="zoom-in-up"
                 data-aos-offset="90"
-                data-aos-duration="850"
+                data-aos-duration="550"
                 data-aos-delay="600"
                 data-aos-anchor-placement="center-bottom">
-                    <img src="./img/apparel.jpg" alt=" " />
+                    <img src="../portfolio-pj/src/assets/img/top.jpg" alt=" " />
                     <h4 class="card-title">アパレルサイト</h4>
                     <p>洋服が好きなので自分でブランドを考え、ホームページを作成しました。</p>
                     <a href="https://github.com/ni-shi-ko/portfolio-pj.git" >git:https://github.com/ni-shi-ko/portfolio-pj.git</a>
@@ -283,7 +289,7 @@
                 <div class="work-cat"
                 data-aos="zoom-in-up"
                 data-aos-offset="100"
-                data-aos-duration="900"
+                data-aos-duration="600"
                 data-aos-delay="650"
                 data-aos-anchor-placement="center-bottom">
                     <img src="./img/copolate.jpg" alt=" " />
@@ -303,7 +309,7 @@
                 data-aos-anchor-placement="top"></div>
         </div>
         <div id="contact">
-            <h1 class="section-title">Contact</h1>
+            <h1 class="profile-title">Contact</h1>
             <p class="contact-text">最後までご覧いただきありがとうございました。<br>私になにかご連絡したいこと等がありましたら下記フォームをお使いください。</p>
             <form method="post " class="form">
                <div class="contact-wrap">
@@ -346,6 +352,7 @@
 <code><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script></code>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
  <script src="smoothscroll.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 <script src="./js/main.js"></script>
 </body>
 

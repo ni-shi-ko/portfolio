@@ -37,7 +37,6 @@ a {
   background-position: center;
   width: 100%;
   height: 90vh;
-  margin-bottom: 7%;
   position: relative;
 }
 #main-vis p {
@@ -49,20 +48,18 @@ a {
   color: white;
 }
 #profile {
-  background-color: rgb(220, 220, 220);
-  color: white;
-  padding-bottom: 8%;
-  margin-bottom: 7%;
+  color: #000;
   width: 100%;
   padding-top: 5%;
+  margin-bottom: 3%;
   scroll-snap-stop: always;
 }
 #profile h5 {
   font-size: 20px;
 }
 .profile-title {
-  font-size: 80px;
-  font-weight: 500;
+  font-size: 100px;
+  font-weight: bold;
   padding-left: 10%;
   font-family: "Times New Roman", Times, serif;
 }
@@ -74,60 +71,80 @@ a {
   scroll-snap-align: start;
 }
 .about-div {
-  padding: 13%;
-  background-color: khaki;
-  margin-right: 40%;
-  margin-left: 10%;
+  padding: 20% 10%;
+  background-color: #EEEEEE;
+  margin-left: 40%;
 }
 .profile-img img{
     position: absolute;
-    width: 30%;
+    width: 40%;
     z-index: 10;
-    top: 0;
-    left: 8%;
+    top: -3%;
+    right: 2%;
     display: block;
 }
 .about-inner {
   color: #000;
   position: absolute;
-  top: 20%;
-  left: 45%;
+  top: 40%;
+  left: 25%;
   background: #fff;
   width: 40%;
   padding: 5% 5%;
   box-sizing: border-box;
+  border: 1px solid #000;
+  z-index: 20;
+  line-height: 1.8;
 }
 .hobby {
   position: relative;
- 
    scroll-snap-type:y mandatory;
   scroll-snap-align: start;
 }
+.hobby-title {
+  position: absolute;
+  z-index: 20;
+  top: -13%;
+}
 .slide-img{
   position: absolute;
-  width: 40%;
+  width: 30%;
   z-index: 10;
-  top: 19%;
-  right: 3%;
+  top: 5%;
+  right: 25%;
+  display: block;
+}
+.slide-img_second {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  right: 10%;
+  z-index: 15;
+  display: block;
+}
+.slide-img_third {
+  position: absolute;
+  width: 25%;
+  top: -8%;
+  right: 1%;
+  z-index: 5;
   display: block;
 }
 .hobby-img {
-  padding: 15% 20%;
-  margin-left: 50%;
-  margin-top: 3%;
-  background-color: yellow;
+  padding: 20% 25%;
+  margin-right: 50%;
+  background-color: #EEEEEE	;
 }
 .hobby-div {
-  padding: 10% 18%;
-  background-color: goldenrod;
-  margin: 0 30%;
+  padding: 20%;
+  background-color: #DDDDDD;
   position: absolute;
   top: 8%;
   right: 30%;
 }
-.hobby-div_second {
+/* .hobby-div_second {
   padding: 10% 18%;
-  background-color: palegoldenrod;
+  background-color: #CCCCCC	;
   margin: 0 30%;
   position: absolute;
   top: 15%;
@@ -135,7 +152,7 @@ a {
 }
 .hobby-div-third{
   padding: 10% 18%;
-  background-color: darkorange;
+  background-color: #BBBBBB;
   margin: 0 30%;
   position: absolute;
   top: 23%;
@@ -143,22 +160,24 @@ a {
 }
 .hobby-div-force {
   padding: 10% 18%;
-  background-color:orange;
+  background-color:#AAAAAA;
   margin: 0 30%;
   position: absolute;
   top: 31%;
   right: 24%;
-}
+} */
 .hobby-inner {
   color: #000;
   position: absolute;
   z-index: 20;
-  bottom: 16%;
-  left: 15%;
+  bottom: 10%;
+  left: 23%;
   background: #fff;
   width: 40%;
-  padding: 5% 5%;
+  padding: 5% 2%;
   box-sizing: border-box;
+  border: 1px solid #000;
+  line-height: 2.5;
 }
 .section-title {
   text-align: center;
@@ -167,8 +186,6 @@ a {
   font-family: "Times New Roman", Times, serif;
 }
 #skill {
-  background-color: rgb(220, 220, 220);
-  margin-bottom: 7%;
   width: 100%;
   position: relative;
   padding-top: 5%;
@@ -176,14 +193,9 @@ a {
   scroll-snap-align: start;
 }
 .skill-text {
-  color: white;
-  padding: 0 25%;
-  text-align: center;
+  padding:0 25% 0 10%;
   margin-bottom: 5%;
   font-size: 20px;
-}
-.skill-title {
-  color: #fff;
 }
 .skill-wrap {
   margin: 0 auto;
@@ -194,28 +206,29 @@ a {
   flex-wrap: wrap;
   
 }
-.skill-div {
+/* .skill-div {
   background-color: beige;
   padding: 30% 43%;
   position: absolute;
   top: 10%;
   left: 0;
   z-index: 1;
-}
+} */
 .skill-div_second {
   position: absolute;
   right: 0;
-  bottom: 3%;
-  background-color: ivory;
-  padding: 22% 43%;
+  bottom: 13%;
+  background-color: #DDDDDD;
+  padding: 18% 28%;
   z-index: 10;
 }
 .skill-div_third {
     position: absolute;
-    left: 10%;
-    top: 2%;
-    background-color:ivory ;
-    padding: 20% 40%;
+    left: 0;
+    top: -10%;
+    z-index: -1;
+    background-color:#EEEEEE ;
+    padding: 18% 28%;
 }
 /* .skill-div_force {
     position: absolute;
@@ -262,10 +275,9 @@ a {
   margin-right: 10%;
 }
 #works {
-  background-color: rgb(220, 220, 220);
-  color: #fff;
+  color: #000;
   margin-bottom: 7%;
-  padding:8% 5%;
+  padding:0 5% 5%;
   position: relative;
   z-index: 50;
   scroll-snap-type:y mandatory;
@@ -273,10 +285,11 @@ a {
 }
 .work-title {
   text-align: left;
-  padding: 0;
+  padding-left: 5%;
 }
 .work-text {
   margin-bottom: 5%;
+  padding-left: 5%;
   font-size: 20px;
 }
 .work-wrap {
@@ -298,6 +311,7 @@ a {
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius:0 .25rem;
+  border: 1px solid #000;
 }
 .work-cat p {
   text-align: center;
@@ -311,7 +325,7 @@ a {
   position: absolute;
   padding: 13%;
   background-color: orange;
-  bottom: 5%;
+  bottom: 8%;
   left: 25%;
   z-index: -1;
 }
@@ -338,13 +352,13 @@ a {
 }
 #contact {
   background-color: rgb(220, 220, 220);
-  padding-bottom: 2%;
+  
   color: #fff;
   
 }
 .contact-text {
   font-size: 20px;
-  text-align: center;
+  padding-left: 10%;
   width: 100%;
 }
 form {
@@ -352,14 +366,13 @@ form {
   margin-top: 2%;
 }
 .name  {
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
+ margin: 3% 0;
+} 
 .input {
   border: none;
   border-bottom: 1px solid #000;
   background-color: transparent;
-  width: 20%;
+  width: 40%;
   outline: 0;
   box-sizing: border-box;
 }
@@ -368,7 +381,7 @@ form {
   border: none;
   border-bottom: 1px solid #000;
   background-color: transparent;
-  width: 50%;
+  width: 40%;
   outline: 0;
   margin-top: 2%;
 }
@@ -391,7 +404,7 @@ form {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #DDDDDD;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -401,8 +414,8 @@ form {
   width: 12px;
   height: 12px;
   margin-bottom: -6px;
-  border-top: solid 3px #000;
-  border-right: solid 3px #000;
+  border-top: solid 3px #fff;
+  border-right: solid 3px #fff;
   transform: rotate(-45deg);
 }
 .page-top:hover {
@@ -431,7 +444,8 @@ form {
 }
 .footer-text {
   padding: 10px 0;
-  background-color: rgb(220, 220, 220);
+  background: #fff;
+  color: #000;
 }
 [data-aos].animated {
     visibility: visible;
