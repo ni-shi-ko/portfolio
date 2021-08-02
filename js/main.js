@@ -16,7 +16,7 @@ let num = -1;
 
 const img_src_sec = ['./img/my1.jpg', './img/my2.jpg', './img/my3.jpg', './img/my4.jpg', './img/my5.jpg', './img/my6.jpg'];
 
-const img_src_thi = ['./img/cafe1.jpg', './img/cafe2.jpg', './img/cafe3.jpg', './img/cafe4.jpg', './img/cafe5.jpg', './img/cafe6.jpg' ];
+const img_src_thi = ['./img/cafe1.jpg', './img/cafe2.jpg', './img/cafe3.jpg', './img/cafe7.jpg', './img/cafe5.jpg', './img/cafe6.jpg' ];
 
 function slide_time() {
   if (num === 5) {
