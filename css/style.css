@@ -54,7 +54,7 @@ a {
   margin-bottom: 3%;
   scroll-snap-stop: always;
 }
-#profile h5 {
+#profile h2 {
   font-size: 20px;
 }
 .profile-title {
@@ -355,7 +355,6 @@ form {
   border: none;
   cursor: pointer;
   outline: none;
-  /* margin: 0 auto; */
   position: fixed;
   right: 30px;
   bottom: 20px;
@@ -548,26 +547,7 @@ form {
     left: 0;
     padding: 0 5%;
   }
-  /* .hobby-div {
-    top: 85%;
-    right: 30%;
-  }
-  .hobby-div_second {
-    top: 82%;
-    right: 27%;
-  }
-  .hobby-div-third {
-    display: none;
-    top: 79%;
-    right: 24%;
-  }
-  .hobby-div-force {
-    display: none;
-    top: 76%;
-    right: 21%;
-  } */
   #skill {
-    /* padding: 5%; */
     position: relative;
   }
   .skill-text {
@@ -595,10 +575,7 @@ form {
   
 }
   .skill-div_force {
-      display: none;
-    /* padding: 80% 50%;
-    bottom: 10%; */
-  }
+      display: none;  }
   .inner {
     padding: 10%;
   }
