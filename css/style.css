@@ -282,6 +282,10 @@ a {
   font-size: 13px;
   margin: 3% 0;
 }
+.work-cat img {
+  width: 100%;
+  display: block;
+}
 .work-div {
   position: absolute;
   padding: 13%;
@@ -469,10 +473,10 @@ form {
   transition: .5s;
 }
 #nav li a:hover{
-  color: #ffffff;
-  background:dodgerblue;
+ 
   border-bottom: none;
-}.in{
+}.in{ color: #ffffff;
+  background:dodgerblue;
   transform: translateX(100%);
 }
 .line_1,.line_2,.line_3{
